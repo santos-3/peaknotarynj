@@ -9,7 +9,7 @@ if (darkModeToggle) {
 
   if (localStorage.getItem("darkMode") === "enabled") {
     document.body.classList.add("dark-mode");
-    darkModeToggle.textContent = "☀️ Light Mode";
+    darkModeToggle.textContent = "☀️";
   }
 
   /* Toggle dark mode */
@@ -19,10 +19,10 @@ if (darkModeToggle) {
 
     if (document.body.classList.contains("dark-mode")) {
       localStorage.setItem("darkMode", "enabled");
-      darkModeToggle.textContent = "☀️ Light Mode";
+      darkModeToggle.textContent = "☀️";
     } else {
       localStorage.setItem("darkMode", "disabled");
-      darkModeToggle.textContent = "🌙 Dark Mode";
+      darkModeToggle.textContent = "🌙";
     }
   });
 }
