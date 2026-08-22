@@ -669,7 +669,7 @@ textarea {
 /* DARK MODE SEAL */
 
 body.dark-mode .footer-seal {
-  content: url("../images/seal-dark.png");
+  content: url("/images/seal-dark.png");
 }
 
 .footer-brand-text h2 {

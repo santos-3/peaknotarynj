@@ -5,20 +5,23 @@
 const darkModeToggle = document.getElementById("darkModeToggle");
 const siteLogo = document.getElementById("site-logo");
 
-if (darkModeToggle) {
-  /* Check saved preference */
+/* Check saved preference */
 
-  if (localStorage.getItem("darkMode") === "enabled") {
-    document.body.classList.add("dark-mode");
+if (localStorage.getItem("darkMode") === "enabled") {
+  document.body.classList.add("dark-mode");
+
+  if (darkModeToggle) {
     darkModeToggle.textContent = "☀️";
-
-    if (siteLogo) {
-      siteLogo.src = "images/logo-dark.png";
-    }
   }
 
-  /* Toggle dark mode */
+  if (siteLogo) {
+    siteLogo.src = "images/logo-dark.png";
+  }
+}
 
+/* Toggle dark mode */
+
+if (darkModeToggle) {
   darkModeToggle.addEventListener("click", function () {
     document.body.classList.toggle("dark-mode");
 
@@ -30,7 +33,7 @@ if (darkModeToggle) {
         siteLogo.src = "images/logo-dark.png";
       }
     } else {
-      localStorage.setItem("darkMode", "disabled");
+      localStorage.removeItem("darkMode");
       darkModeToggle.textContent = "🌙";
 
       if (siteLogo) {
