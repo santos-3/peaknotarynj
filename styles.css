@@ -298,6 +298,44 @@ nav a:hover {
 }
 
 /* =========================
+   CONTINUOUS SCROLLING BANNER
+   ========================= */
+
+.scrolling-banner {
+    width: 100%;
+    overflow: hidden;
+    background: #5c5c5c;
+    border-top: 3px solid #6d28d9;
+    border-bottom: 3px solid #6d28d9;
+    padding: 14px 0;
+}
+
+.scrolling-track {
+    display: flex;
+    width: max-content;
+    animation: continuous-scroll 22s linear infinite;
+}
+
+.scrolling-track span {
+    flex-shrink: 0;
+    padding-right: 70px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+@keyframes continuous-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* =========================
    HERO
 ========================= */
 
