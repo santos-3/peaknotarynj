@@ -304,9 +304,9 @@ nav a:hover {
 .scrolling-banner {
   width: 100%;
   overflow: hidden;
-  background: #050505;
-  border-top: 1px solid #6d28d9;
-  border-bottom: 1px solid #6d28d9;
+  background: #282828;
+  border-top: 3px solid #6d28d9;
+  border-bottom: 3px solid #6d28d9;
   padding: 16px 0;
 }
 
