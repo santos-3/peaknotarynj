@@ -297,47 +297,52 @@ nav a:hover {
   border-color: var(--purple);
 }
 
-/* =========================
-   CONTINUOUS SCROLLING BANNER
-   ========================= */
+/* =========================================
+   PEAK NOTARY - CONTINUOUS CAROUSEL BANNER
+   ========================================= */
 
 .scrolling-banner {
   width: 100%;
   overflow: hidden;
-  background: #636363;
-  border-top: 3px solid #6d28d9;
-  border-bottom: 3px solid #6d28d9;
-  padding: 10px 0;
+  background: #050505;
+  border-top: 1px solid #6d28d9;
+  border-bottom: 1px solid #6d28d9;
+  padding: 16px 0;
 }
 
 .scrolling-track {
   display: flex;
   width: max-content;
-  animation: continuous-scroll 35s linear infinite;
+  will-change: transform;
+  animation: peak-carousel 30s linear infinite;
 }
 
 .scrolling-group {
-    display: flex;
-    flex-shrink: 0;
+  display: flex;
+  flex-shrink: 0;
 }
 
-.scrolling-track span {
+.scrolling-group span {
+  display: block;
   flex-shrink: 0;
-  padding-right: 70px;
-  color: #fff;
-  font-size: 16px;
+
+  padding-right: 100px;
+
+  color: #ffffff;
+  font-size: 17px;
   font-weight: 600;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   white-space: nowrap;
 }
 
-@keyframes continuous-scroll {
+/* Continuous movement */
+@keyframes peak-carousel {
   from {
     transform: translateX(0);
   }
 
   to {
-    transform: translateX(-50%);
+    transform: translateX(-33.333333%);
   }
 }
 
