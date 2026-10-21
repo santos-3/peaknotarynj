@@ -1253,11 +1253,11 @@ body.dark-mode .footer-seal {
   ========================= */
 
   .image-container img {
-    width: 100%;
+    width: 50%;
 
-    max-width: 100%;
+    max-width: 50%;
 
-    border-radius: 22px;
+    border-radius: 10px;
   }
 
   /* =========================
