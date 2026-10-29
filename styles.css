@@ -412,30 +412,6 @@ nav a:hover {
 }
 
 /* =========================
-   MOBILE HERO
-========================= */
-
-@media (max-width: 800px) {
-  .dark-toggle {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    width: auto;
-    max-width: none;
-    flex: 0 0 auto;
-    justify-self: end;
-    align-self: center;
-
-    white-space: nowrap;
-    min-height: 40px;
-    padding: 7px 10px;
-    font-size: 12px;
-    box-sizing: border-box;
-  }
-}
-
-/* =========================
    MOUNTAIN
 ========================= */
 
@@ -578,6 +554,17 @@ h2 {
   color: var(--purple);
 
   font-size: 28px;
+}
+
+/* CENTER HOW IT WORKS CONTENT */
+
+#how {
+  text-align: center;
+}
+
+#how .container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /* =========================
@@ -1140,25 +1127,22 @@ textarea {
   }
 }
 
-  /* =========================
-     HEADER
-  ========================= */
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+  /* HEADER */
 
   header {
     min-height: 120px;
-
     padding: 12px 5%;
-
     display: grid;
-
-    grid-template-columns: 1fr auto;
-
+    grid-template-columns: minmax(0, 1fr) auto;
     grid-template-areas:
       "logo actions"
       "nav nav";
-
     gap: 10px 15px;
-
     align-content: center;
   }
 
@@ -1168,71 +1152,62 @@ textarea {
 
   .logo img {
     width: 150px;
-
     max-width: 100%;
   }
 
   nav {
     grid-area: nav;
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     gap: 18px;
-
     width: 100%;
-
     flex-wrap: wrap;
-
     padding-top: 5px;
   }
 
   nav a {
     font-size: 13px;
-
     white-space: nowrap;
   }
 
-  header > .btn {
+  /* HEADER ACTIONS */
+
+  .header-actions {
     grid-area: actions;
+    display: flex;
+    align-items: center;
+    justify-self: end;
+    gap: 8px;
+  }
 
+  .header-actions .btn {
     min-height: 40px;
-
     padding: 9px 13px;
-
     font-size: 12px;
+    white-space: nowrap;
   }
 
-  .brand {
-    font-size: 19px;
-  }
+  /* DARK/LIGHT TOGGLE */
 
-  .mark {
-    font-size: 26px;
-  }
-
-  .dark-toggle {
+  .header-actions .dark-toggle {
+    width: auto;
+    max-width: max-content;
+    min-width: 0;
+    flex: 0 0 auto;
+    white-space: nowrap;
     min-height: 40px;
-
     padding: 7px 10px;
-
     font-size: 12px;
+    box-sizing: border-box;
   }
 
-  /* =========================
-     HERO
-  ========================= */
+  /* HERO */
 
   .hero {
     grid-template-columns: 1fr;
-
     gap: 35px;
-
     min-height: auto;
-
     padding: 60px 7%;
   }
 
@@ -1244,41 +1219,37 @@ textarea {
     font-size: 18px;
   }
 
-  /* =========================
-     MOUNTAIN
-  ========================= */
+  .hero-image img {
+    width: 100%;
+    max-width: 100%;
+    height: 320px;
+  }
+
+  /* MOUNTAIN */
 
   .mountain {
     height: 320px;
-
     margin-top: 10px;
   }
 
   .mountain:before {
     border-left-width: 110px;
-
     border-right-width: 110px;
-
     border-bottom-width: 160px;
   }
 
   .nj {
     font-size: 40px;
-
     margin-top: -90px;
   }
 
   .mountain p {
     font-size: 14px;
-
     letter-spacing: 4px;
-
     margin-top: 60px;
   }
 
-  /* =========================
-     SECTIONS
-  ========================= */
+  /* SECTIONS */
 
   section {
     padding: 65px 7%;
@@ -1288,29 +1259,22 @@ textarea {
     font-size: 32px;
   }
 
-  /* =========================
-     SERVICE CARDS
-  ========================= */
+  /* SERVICE CARDS */
 
   .cards {
     grid-template-columns: 1fr;
   }
 
-  /* =========================
-     HOW IT WORKS
-  ========================= */
+  /* HOW IT WORKS */
 
   .steps {
     grid-template-columns: 1fr;
   }
 
-  /* =========================
-     ABOUT
-  ========================= */
+  /* ABOUT */
 
   .about {
     grid-template-columns: 1fr;
-
     gap: 30px;
   }
 
@@ -1322,9 +1286,7 @@ textarea {
     font-size: 21px;
   }
 
-  /* =========================
-     SERVICE HERO
-  ========================= */
+  /* SERVICE HERO */
 
   .service-hero {
     padding: 65px 7% 60px;
@@ -1338,9 +1300,7 @@ textarea {
     font-size: 17px;
   }
 
-  /* =========================
-     PRICING
-  ========================= */
+  /* PRICING */
 
   .pricing-cards {
     grid-template-columns: 1fr;
@@ -1350,9 +1310,7 @@ textarea {
     padding: 25px;
   }
 
-  /* =========================
-     MOBILE NOTARY
-  ========================= */
+  /* MOBILE NOTARY */
 
   .mobile-pricing {
     padding: 30px 25px;
@@ -1362,21 +1320,16 @@ textarea {
     font-size: 27px;
   }
 
-  /* =========================
-     BUSINESS DOCUMENTS
-  ========================= */
+  /* BUSINESS DOCUMENTS */
 
   .business-list {
     grid-template-columns: 1fr;
   }
 
-  /* =========================
-     BUTTONS
-  ========================= */
+  /* BUTTONS */
 
   .btn {
     min-height: 44px;
-
     padding: 12px 18px;
   }
 
@@ -1388,35 +1341,27 @@ textarea {
     margin-left: 0;
   }
 
-  /* =========================
-     FOOTER
-  ========================= */
+  /* FOOTER */
 
   .footer-content {
     flex-direction: column;
-
     gap: 25px;
-
     text-align: center;
   }
 
   .footer-brand {
     flex-direction: column;
-
     justify-content: center;
-
     text-align: center;
   }
 
   .footer-seal {
     width: 90px;
-
     height: 90px;
   }
 
   .footer-social {
     justify-content: center;
-
     gap: 15px;
   }
 }
@@ -1430,7 +1375,6 @@ textarea {
 
   header {
     min-height: 145px;
-
     padding: 10px 4%;
   }
 
@@ -1440,7 +1384,6 @@ textarea {
 
   nav {
     gap: 10px 14px;
-
     padding-top: 3px;
   }
 
@@ -1448,19 +1391,16 @@ textarea {
     font-size: 12px;
   }
 
-  header > .btn {
+  .header-actions .btn {
     min-height: 38px;
-
     padding: 8px 10px;
-
     font-size: 11px;
+    width: auto;
   }
 
-  .dark-toggle {
+  .header-actions .dark-toggle {
     min-height: 38px;
-
     padding: 6px 8px;
-
     font-size: 11px;
   }
 
@@ -1524,9 +1464,7 @@ textarea {
 
   .service-cta .btn {
     display: flex;
-
     width: 100%;
-
     margin: 8px 0;
   }
 }
