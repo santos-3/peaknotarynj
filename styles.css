@@ -473,7 +473,7 @@ nav a:hover {
 ========================= */
 
 section {
-  padding: 85px 9%;
+  padding: 60px 9%;
 }
 
 h2 {
@@ -618,7 +618,7 @@ textarea,
 select {
   width: 100%;
 
-  padding: 15px;
+  padding: 13px;
 
   border: 1px solid var(--border);
 
@@ -774,10 +774,6 @@ textarea {
 
   font-size: 13px;
 }
-
-/* ========================================
-   SERVICE PAGES
-======================================== */
 
 /* =========================
    SERVICE HERO
@@ -1065,11 +1061,16 @@ textarea {
 }
 
 .important-info li {
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 
   color: var(--muted);
 
-  line-height: 1.6;
+  line-height: 1.7;
+}
+
+#how .important-info li {
+  font-size: 22px;
+  line-height: 1.5;
 }
 
 /* =========================
