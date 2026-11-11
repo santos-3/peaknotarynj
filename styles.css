@@ -623,6 +623,12 @@ h2 {
    CONTACT FORM
 ========================= */
 
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 form {
   width: 100%;
 
