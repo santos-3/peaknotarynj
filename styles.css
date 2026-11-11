@@ -536,29 +536,55 @@ h2 {
    HOW IT WORKS
 ========================= */
 
-.steps {
-  display: grid;
-
-  grid-template-columns: repeat(4, 1fr);
-
-  gap: 16px;
-}
-
-.steps b {
-  color: var(--purple);
-
-  font-size: 28px;
-}
-
-/* CENTER HOW IT WORKS CONTENT */
-
 #how {
   text-align: center;
 }
 
-#how .container {
+#how .steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+#how .steps article {
+  padding: 20px;
+  text-align: center;
+}
+
+#how .steps b {
+  display: block;
+  color: var(--purple);
+  font-size: 28px;
+}
+
+.important-info {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 40px auto 0;
+  text-align: left;
+}
+
+.important-info h2 {
+  text-align: center;
+}
+
+.important-info ul {
+  line-height: 1.8;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  #how .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  #how .steps {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* =========================
