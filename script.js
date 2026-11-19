@@ -1,3 +1,4 @@
+
 /* =========================
    DARK MODE
 ========================= */
@@ -44,13 +45,23 @@ if (darkModeToggle) {
 }
 
 /* =========================
-   CLEAR APPOINTMENT FORM
+   AUTO-FILL SELECTED SERVICE
 ========================= */
 
-window.addEventListener("pageshow", function () {
-  const form = document.querySelector("#contact form");
+document.addEventListener("DOMContentLoaded", function () {
 
-  if (form) {
-    form.reset();
+  const params = new URLSearchParams(window.location.search);
+  const service = params.get("service");
+
+  const messageBox = document.getElementById("booking-message");
+
+  console.log("Selected service:", service);
+  console.log("Message box found:", !!messageBox);
+
+  if (service && messageBox) {
+    messageBox.value =
+      "Selected Service: " + service +
+      "\n\nAdditional Details:\n";
   }
+
 });

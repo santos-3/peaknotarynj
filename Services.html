@@ -23,12 +23,11 @@
       </a>
       
       <nav>
-        <a href="index.html#services">Services</a>
+        <a href="index.html#Services">Services</a>
         <a href="index.html#how">How It Works</a>
-        <a href="index.html#about">About</a>
         <a href="index.html#contact">Contact Us</a>
       </nav>
-
+ 
       <a class="btn" href="index.html#contact"> Schedule </a>
 
       <button id="darkModeToggle" class="dark-toggle" type="button">
@@ -52,65 +51,70 @@
         </p>
       </section>
 
+      <!-- Services -->
+
+
       <!-- General Notarization -->
 
-      <section class="service-intro">
+      <section class="service-intro" id="general">
       </section>
 
-      <!-- PRICING -->
+      
+<section class="pricing-section">
+  <div class="pricing-cards">
 
-      <section class="pricing-section">
-        <div class="pricing-cards">
-          <article class="price-card">
-            <h3>Acknowledgments</h3>
+    <a class="price-card"
+       href="index.html?service=Acknowledgments#contact">
+      <h3>Acknowledgments</h3>
+      <p>
+        Professional acknowledgment of signatures for documents requiring notarization.
+      </p>
+      <strong>
+        $2.50 per notarial act<br>
+        Mobile appointments start at $65
+      </strong>
+    </a>
 
-            <p>
-            Professional acknowledgment of signatures for documents requiring notarization.
-            </p>
+    <a class="price-card"
+       href="index.html?service=Oaths%20%26%20Affirmations#contact">
+      <h3>Oaths & Affirmations</h3>
+      <p>
+        Administration of an oath or affirmation when authorized by New Jersey law.
+      </p>
+      <strong>
+        $2.50 per notarial act<br>
+        Mobile appointments start at $65
+      </strong>
+    </a>
 
-            <strong>$2.50 per notarial act
-              <br>Mobile appointments start at $65</strong>
-            </strong>
-          </article>
+    <a class="price-card"
+       href="index.html?service=Affidavits#contact">
+      <h3>Affidavits</h3>
+      <p>Notarization of affidavits and sworn statements.</p>
+      <strong>
+        $2.50 per notarial act<br>
+        Mobile appointments start at $65
+      </strong>
+    </a>
 
-          <article class="price-card">
-            <h3>Oaths & Affirmations</h3>
+    <a class="price-card"
+       href="index.html?service=Proofs%20of%20Deed#contact">
+      <h3>Proofs of Deed</h3>
+      <p>
+        Notarial services involving proofs of deeds when authorized and appropriate.
+      </p>
+      <strong>
+        $2.50 per notarial act<br>
+        Mobile appointments start at $65
+      </strong>
+    </a>
 
-            <p>
-              Administration of an oath or affirmation when authorized by New
-              Jersey law.
-            </p>
-
-            <strong> $2.50 per notarial act
-            <br>Mobile appointments start at $65</strong>
-          </article>
-
-          <article class="price-card">
-            <h3>Affidavits</h3>
-
-            <p>Notarization of affidavits and sworn statements.</p>
-
-            <strong> $2.50 per notarial act
-            <br>Mobile appointments start at $65</strong>
-          </article>
-
-          <article class="price-card">
-            <h3>Proofs of Deed</h3>
-
-            <p>
-              Notarial services involving proofs of deeds when authorized and
-              appropriate.
-            </p>
-
-            <strong> $2.50 per notarial act 
-              <br>Mobile appointments start at $65</strong>
-          </article>
-        </div>
-      </section>
+  </div>
+</section>
 
       <!-- Mobile Appointments -->
 
-      <section class="service-hero">
+      <section class="service-hero" id="mobile">
         <p class="eyebrow"></p>
 
         <h1>
@@ -134,7 +138,7 @@
           
           <!-- LOCAL -->
 
-          <article class="price-card">
+          <article class="price-card" data-service="Local Mobile Appointment">
             <h3>Local Mobile Appointment</h3>
 
             <p>
@@ -148,7 +152,7 @@
 
           <!-- EXTENDED -->
 
-          <article class="price-card">
+          <article class="price-card" data-service="Extended Travel">
             <h3>Extended Travel</h3>
 
             <p>Appointments outside our standard service area.</p>
@@ -162,7 +166,7 @@
 
           <!-- AFTER HOURS -->
 
-          <article class="price-card">
+          <article class="price-card" data-service="Evening & Weekend">
             <h3>Evening & Weekend</h3>
 
             <p>Appointment availability outside standard business hours.</p>
@@ -174,7 +178,7 @@
 
           <!-- FACILITY -->
 
-          <article class="price-card">
+          <article class="price-card" data-service="Facility Appointments">
             <h3>Facility Appointments</h3>
 
             <p>
@@ -192,7 +196,7 @@
 
       <!-- BUSINESS SERVICES -->
 
-      <section class="service-hero">
+      <section class="service-hero" id="business">
         <p class="eyebrow"></p>
 
         <h1>
@@ -215,7 +219,7 @@
         <div class="pricing-cards">
           <!-- BASIC -->
 
-          <article class="price-card">
+          <article class="price-card" data-service="Business Basic">
             <h3>Business Basic</h3>
 
             <p>
@@ -231,7 +235,7 @@
 
           <!-- PROFESSIONAL -->
 
-          <article class="price-card">
+          <article class="price-card" data-service="Business Professional">
             <h3>Business Professional</h3>
 
             <p>
@@ -247,7 +251,7 @@
 
           <!-- BUSINESS APPOINTMENT -->
 
-          <article class="price-card">
+          <article class="price-card" data-service="Business Appointment">
             <h3>Business Appointment</h3>
 
             <p>
@@ -263,7 +267,7 @@
 
           <!-- CUSTOM -->
 
-          <article class="price-card">
+          <article class="price-card" data-service="Business Custom">
             <h3>Business Custom</h3>
 
             <p>
